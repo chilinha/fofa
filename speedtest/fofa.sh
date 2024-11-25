@@ -240,14 +240,14 @@ cat tmp1.txt tmp2.txt tmp3.txt > "txt/fofa_${city}.txt"
 rm -rf tmp1.txt tmp2.txt tmp3.txt
 
 
-#--------------------合并所有城市的txt文件为:   zubo_fofa.txt-----------------------------------------
+#--------------------合并所有城市的txt文件为:   fofa.txt-----------------------------------------
 
-echo "天津联通,#genre#" >>zubo_fofa.txt
-cat txt/Tianjin_160.txt >>zubo_fofa.txt
-echo "北京联通,#genre#" >>zubo_fofa.txt
-cat txt/Beijing_liantong_145.txt >>zubo_fofa.txt
-echo "四川电信,#genre#" >>zubo_fofa.txt
-cat txt/Sichuan_333.txt >>zubo_fofa.txt
+echo "天津联通,#genre#" >>fofa.txt
+cat txt/Tianjin_160.txt >>fofa.txt
+echo "北京联通,#genre#" >>fofa.txt
+cat txt/Beijing_liantong_145.txt >>fofa.txt
+echo "四川电信,#genre#" >>fofa.txt
+cat txt/Sichuan_333.txt >>fofa.txt
 
 
 # for a in result/*.txt; do echo "";echo "========================= $(basename "$a") ==================================="; cat $a; done
