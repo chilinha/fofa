@@ -1,4 +1,4 @@
-name: gengxincaijizuboip
+name: sort
 
 on:
   schedule:
@@ -22,8 +22,7 @@ jobs:
       #working-directory: iptv/speedtest
       run: |
         cd $GITHUB_WORKSPACE/speedtest
-        #bash ./HBzubo.sh
-        bash ./HBcaijiip.sh
+        bash ./caiji.sh
 
     - name: Update Results
       run: |
