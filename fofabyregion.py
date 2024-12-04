@@ -33,13 +33,13 @@ for url, filename in urls.items():
         existing_urls = [url.strip() for url in existing_urls]  # 去除每行末尾的换行符
         with open(filename, 'r+', encoding='utf-8') as file:
             content = file.read()
-            文件。seek(0, 0)  # 将文件指针移到文件开头
+            file.seek(0, 0)  # 将文件指针移到文件开头
             for url in urls:
                 if url not in existing_urls:
-                    文件。write(url + "\n")
+                    file.write(url + "\n")
                     print(url)
                     existing_urls.append(url)  # 将新写入的URL添加到已存在的URL列表中
-            文件。write(content)  # 将原有内容写回文件
+            file.write(content)  # 将原有内容写回文件
     except Exception as e:
         print(f"爬取 {filename} URL {url} 失败：{str(e)}")
         continue
