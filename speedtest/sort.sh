@@ -127,11 +127,10 @@ cat tmp1.txt tmp2.txt tmp3.txt > "txt/${city}.txt"
 
 rm -rf tmp1.txt tmp2.txt tmp3.txt
 
-
 #--------------------合并所有城市的txt文件为:   zubo.txt-----------------------------------------
 
 echo "#EXTM3U url-tvg="https://e.erw.cc/e.xml"" >zubo.txt
 cat txt/Tianjin_liantong.txt >>zubo.txt
-
+cat txt/Beijing_liantong.txt >>zubo.txt
 
 for a in result/*.txt; do echo "";echo "========================= $(basename "$a") ==================================="; cat $a; done
