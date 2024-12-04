@@ -29,7 +29,7 @@ fi
 case $city_choice in
     1)
         city="Tianjin_liantong"
-        stream="rtp/225.1.1.149:5002"
+        stream="rtp/225.1.1.111:5002"
 	channel_key="天津"
 #        url_fofa=$(echo  '"udpxy" && country="CN" && region="Tianjin" && protocol="http"' | base64 |tr -d '\n')
 #        url_fofa="https://fofa.info/result?qbase64="$url_fofa
