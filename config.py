@@ -10,5 +10,5 @@ url_blacklist = [
 ]
 
 epg_urls = [
-    "https://epg.pw/xmltv/epg_TW.xml",
+    "https://e.erw.cc/e.xml",
 ]
