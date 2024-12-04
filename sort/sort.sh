@@ -98,16 +98,16 @@ while IFS= read -r line; do
     a=$(head -n 3 zubo.tmp | awk '{print $NF}' | tail -n 1)
 
     echo "第 $i/$lines 个：$ip $a"
-    echo "$ip $a" >> "speedtest_${city}_$time.log"
+    echo "$ip $a" >> "sort_${city}_$time.log"
 done < "$only_good_ip"
 
 rm -f zubo.tmp
-awk '/M|k/{print $2"  "$1}' "speedtest_${city}_$time.log" | sort -n -r >"result/result_${city}.txt"
+awk '/M|k/{print $2"  "$1}' "sort_${city}_$time.log" | sort -n -r >"result/result_${city}.txt"
 cat "result/result_${city}.txt"
 ip1=$(awk 'NR==1{print $2}' result/result_${city}.txt)
 ip2=$(awk 'NR==2{print $2}' result/result_${city}.txt)
 ip3=$(awk 'NR==3{print $2}' result/result_${city}.txt)
-rm -f "speedtest_${city}_$time.log"
+rm -f "sort_${city}_$time.log"
 
 # 用 3 个最快 ip 生成对应城市的 txt 文件
 program="template/template_${city}.txt"
