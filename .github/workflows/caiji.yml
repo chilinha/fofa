@@ -2,7 +2,7 @@ name: caiji
 
 on:
   schedule:
-    - cron: '*/20 * * * *'
+    - cron: '0 */2 * * *'
   workflow_dispatch:
 jobs:
   build:
@@ -21,7 +21,7 @@ jobs:
         run: pip install selenium requests futures eventlet
 
       - name: Run caiji.py
-        run: python ${{ github.workspace }}/caiji/caiji.py
+        run: python ${{ github.workspace }}/caiji.py
 
       - name: Update Results
         run: |
