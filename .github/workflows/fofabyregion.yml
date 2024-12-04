@@ -1,4 +1,4 @@
-name: spider-fofabyregion
+name: caiji
 
 on:
   schedule:
@@ -20,12 +20,10 @@ jobs:
       - name: Install dependencies
         run: pip install selenium requests futures eventlet
 
-      - name: Run fofabyregion.py
-        run: python ${{ github.workspace }}/fofabyregion.py
+      - name: Run caiji.py
+        run: python ${{ github.workspace }}/caiji.py
 
-
-
-      - name: 提交更改
+      - name: Update Results
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
