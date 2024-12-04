@@ -121,7 +121,7 @@ rm -rf tmp1.txt tmp2.txt tmp3.txt
 
 #--------------------合并所有城市的txt文件为:   fofa.m3u-----------------------------------------
 
-echo "#EXTM3U url-tvg="https://e.erw.cc/e.xml"" >fofa.m3u
+echo "#EXTM3U url-tvg=\"https://e.erw.cc/e.xml\"" >fofa.m3u
 cat txt/Tianjin_liantong.txt >>fofa.m3u
 
 for a in result/*.txt; do echo "";echo "========================= $(basename "$a") ==================================="; cat $a; done
