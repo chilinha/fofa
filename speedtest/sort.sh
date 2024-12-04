@@ -35,14 +35,6 @@ case $city_choice in
 #        url_fofa="https://fofa.info/result?qbase64="$url_fofa
         url_fofa="https://raw.githubusercontent.com/chilinha/fofa/main/Tianjin_liantong.txt"$url_fofa
         ;;
-    2)
-        city="Beijing_liantong"
-        stream="rtp/239.3.1.250:8001"
-        channel_key="北京"
-#        url_fofa=$(echo  '"udpxy" && country="CN" && region="Beijing" && org="China Unicom Beijing Province Network" && protocol="http"' | base64 |tr -d '\n')
-#        url_fofa="https://fofa.info/result?qbase64="$url_fofa
-        url_fofa="https://raw.githubusercontent.com/chilinha/fofa/refs/heads/main/Beijing_liantong.txt"$url_fofa
-        ;;
     0)
         # 如果选择是“全部选项”，则逐个处理每个选项
         for option in {1..20}; do
@@ -127,10 +119,9 @@ cat tmp1.txt tmp2.txt tmp3.txt > "txt/${city}.txt"
 
 rm -rf tmp1.txt tmp2.txt tmp3.txt
 
-#--------------------合并所有城市的txt文件为:   zubo.txt-----------------------------------------
+#--------------------合并所有城市的txt文件为:   fofa.m3u-----------------------------------------
 
-echo "#EXTM3U url-tvg="https://e.erw.cc/e.xml"" >zubo.txt
-cat txt/Tianjin_liantong.txt >>zubo.txt
-cat txt/Beijing_liantong.txt >>zubo.txt
+echo "#EXTM3U url-tvg="https://e.erw.cc/e.xml"" >fofa.m3u
+cat txt/Tianjin_liantong.txt >>fofa.m3u
 
 for a in result/*.txt; do echo "";echo "========================= $(basename "$a") ==================================="; cat $a; done
