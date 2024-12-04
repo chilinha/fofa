@@ -108,6 +108,7 @@ cat "result/result_${city}.txt"
 ip1=$(awk 'NR==1{print $2}' result/result_${city}.txt)
 ip2=$(awk 'NR==2{print $2}' result/result_${city}.txt)
 ip3=$(awk 'NR==3{print $2}' result/result_${city}.txt)
+ip4=$(awk 'NR==3{print $2}' result/result_${city}.txt)
 rm -f "speedtest_${city}_$time.log"
 
 # 用 2 个最快 ip 生成对应城市的 txt 文件
@@ -115,9 +116,12 @@ program="template/template_${city}.txt"
 
 sed "s/ipipip/$ip1/g" "$program" > tmp1.txt
 sed "s/ipipip/$ip2/g" "$program" > tmp2.txt
-cat tmp1.txt tmp2.txt > "txt/${city}.txt"
+sed "s/ipipip/$ip3/g" "$program" > tmp3.txt
+sed "s/ipipip/$ip4/g" "$program" > tmp4.txt
 
-rm -rf tmp1.txt tmp2.txt
+cat tmp1.txt tmp2.txt tmp3.txt tmp4.txt > "txt/${city}.txt"
+grep -vE '/{3}' txt/${city}.txt > "txt/${city}.txt"
+rm -rf tmp1.txt tmp2.txt tmp3.txt tmp4.txt
 
 
 #--------------------合并所有城市的txt文件为:   zubo.txt-----------------------------------------
