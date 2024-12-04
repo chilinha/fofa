@@ -1,6 +1,0 @@
-#EXTINF:-1 tvg-name="东南卫视" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/东南卫视.png" group-title="卫视",东南卫视
-http://ipipip/rtp/239.3.1.156:8148
-#EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/山东卫视.png" group-title="卫视",山东卫视
-http://ipipip/rtp/239.3.1.209:8052
-#EXTINF:-1 tvg-name="卡酷少儿" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/卡酷少儿.png" group-title="卫视",卡酷少儿
-http://ipipip/rtp/239.3.1.189:8000
