@@ -5,7 +5,7 @@ from collections import OrderedDict
 from datetime import datetime
 import config
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', logging.StreamHandler())
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s'
 
 def parse_template(template_file):
     template_channels = OrderedDict()
