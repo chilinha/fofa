@@ -6,10 +6,6 @@ import time
 # 定义要提取的网页列表和对应的保存文件名
 urls = {
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBjb3VudHJ5PSJDTiIgJiYgcmVnaW9uPSJUaWFuamluIiAmJiBwcm90b2NvbD0iaHR0cCI%3D": "Tianjin_liantong.txt",
-    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBjb3VudHJ5PSJDTiIgJiYgcmVnaW9uPSJaaGVqaWFuZyIgJiYgb3JnPSJDaGluYW5ldCIgJiYgcHJvdG9jb2w9Imh0dHAi": "Zhejiang_dianxin.txt",
-    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBjb3VudHJ5PSJDTiIgJiYgcmVnaW9uPSJCZWlqaW5nIiAmJiBvcmc9IkNoaW5hIFVuaWNvbSBCZWlqaW5nIFByb3ZpbmNlIE5ldHdvcmsiICYmIHByb3RvY29sPSJodHRwIg%3D%3D": "Beijing_liantong.txt",
-    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBjb3VudHJ5PSJDTiIgJiYgcmVnaW9uPSJTaGFuZ2hhaSIgJiYgb3JnPSJDaGluYSBUZWxlY29tIEdyb3VwIiAmJiBwcm90b2NvbD0iaHR0cCI%3D": "Shanghai_dianxin.txt",
-    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBjb3VudHJ5PSJDTiIgJiYgcmVnaW9uPSJHdWFuZ2RvbmciICYmIG9yZz0iQ2hpbmFuZXQiICYmIHByb3RvY29sPSJodHRwIg%3D%3D": "Guangdong_dianxin.txt",
 }
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -36,13 +32,13 @@ for url, filename in urls.items():
         existing_urls = [url.strip() for url in existing_urls]  # 去除每行末尾的换行符
         with open(filename, 'r+', encoding='utf-8') as file:
             content = file.read()
-            file.seek(0, 0)  # 将文件指针移到文件开头
+            文件。seek(0, 0)  # 将文件指针移到文件开头
             for url in urls:
                 if url not in existing_urls:
-                    file.write(url + "\n")
+                    文件。write(url + "\n")
                     print(url)
                     existing_urls.append(url)  # 将新写入的URL添加到已存在的URL列表中
-            file.write(content)  # 将原有内容写回文件
+            文件。write(content)  # 将原有内容写回文件
     except Exception as e:
         print(f"爬取 {filename} URL {url} 失败：{str(e)}")
         continue
