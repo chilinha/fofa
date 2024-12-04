@@ -9,15 +9,6 @@ url_blacklist = [
 
 ]
 
-announcements = [
-    {
-        "channel": "公告",
-        "entries": [
-            {"name": "更新日期", "url": "", "logo": ""},
-        ]
-    }
-]
-
 epg_urls = [
     "https://epg.pw/xmltv/epg_TW.xml",
 ]
