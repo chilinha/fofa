@@ -1,6 +1,4 @@
 #EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_TW.xml"
-#EXTINF:-1 tvg-id="1" tvg-name="更新日期" tvg-logo="" group-title="公告",更新日期
-
 #EXTINF:-1 tvg-id="1" tvg-name="电视指南" tvg-logo="https://live.yangfeiyue.cn/tv/电视指南.png" group-title="央视",电视指南
 http://60.26.61.149:8000/rtp/225.1.2.167:5002
 #EXTINF:-1 tvg-id="2" tvg-name="电视指南" tvg-logo="https://live.yangfeiyue.cn/tv/电视指南.png" group-title="央视",电视指南
