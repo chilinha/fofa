@@ -21,9 +21,7 @@ jobs:
         run: pip install selenium requests futures eventlet
 
       - name: Run fofabyregion.py
-        run: 
-          cd $GITHUB_WORKSPACE/speedtest
-          python ./fofabyregion.py
+        run: python ${{ github.workspace }}/fofabyregion.py
 
 
 
