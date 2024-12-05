@@ -147,7 +147,7 @@ http://111.167.64.129:4022/rtp/225.1.1.236:5002
 http://111.167.64.129:4022/rtp/225.1.1.237:5002
 #EXTINF:-1 tvg-name="东方财经" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/东方财经.png" group-title="数字",东方财经
 http://111.167.64.129:4022/rtp/225.1.1.247:5002
-#EXTINF:-1 tvg-name="梨园" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/梨园频道.png" group-title="数字",梨园频道
+#EXTINF:-1 tvg-name="梨园频道" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/梨园频道.png" group-title="数字",梨园频道
 http://111.167.64.129:4022/rtp/225.1.2.104:5002
 #EXTINF:-1 tvg-name="文物宝库" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/文物宝库.png" group-title="数字",文物宝库
 http://111.167.64.129:4022/rtp/225.1.2.105:5002
@@ -317,7 +317,7 @@ http://111.162.43.107:8888/rtp/225.1.1.236:5002
 http://111.162.43.107:8888/rtp/225.1.1.237:5002
 #EXTINF:-1 tvg-name="东方财经" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/东方财经.png" group-title="数字",东方财经
 http://111.162.43.107:8888/rtp/225.1.1.247:5002
-#EXTINF:-1 tvg-name="梨园" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/梨园频道.png" group-title="数字",梨园频道
+#EXTINF:-1 tvg-name="梨园频道" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/梨园频道.png" group-title="数字",梨园频道
 http://111.162.43.107:8888/rtp/225.1.2.104:5002
 #EXTINF:-1 tvg-name="文物宝库" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/文物宝库.png" group-title="数字",文物宝库
 http://111.162.43.107:8888/rtp/225.1.2.105:5002
@@ -487,7 +487,7 @@ http://60.26.61.149:8000/rtp/225.1.1.236:5002
 http://60.26.61.149:8000/rtp/225.1.1.237:5002
 #EXTINF:-1 tvg-name="东方财经" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/东方财经.png" group-title="数字",东方财经
 http://60.26.61.149:8000/rtp/225.1.1.247:5002
-#EXTINF:-1 tvg-name="梨园" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/梨园频道.png" group-title="数字",梨园频道
+#EXTINF:-1 tvg-name="梨园频道" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/梨园频道.png" group-title="数字",梨园频道
 http://60.26.61.149:8000/rtp/225.1.2.104:5002
 #EXTINF:-1 tvg-name="文物宝库" tvg-logo="https://gitee.com/chilinha/fofa/raw/master/文物宝库.png" group-title="数字",文物宝库
 http://60.26.61.149:8000/rtp/225.1.2.105:5002
